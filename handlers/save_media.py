@@ -107,7 +107,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
 
         await editable.edit(
             "**Your File Stored in my Database!**\n\n"
-            f"<b>{caption}</b>\n\nClick Get video : \n</b><b>{short_url}</b>\n\n"
+            f"<b>{caption}</b>\n\nClick Get video : \n</b>\n<b>╰┈➤{short_url}</b>\n\n"
             "<b>Share &amp; Support Us! ❤️</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
