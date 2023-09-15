@@ -4,18 +4,18 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
-	BOT_OWNER = [int(owner) for owner in os.environ.get("BOT_OWNER", "").split()]
-	DATABASE_URL = os.environ.get("DATABASE_URL")
+	API_ID = int(os.environ.get("API_ID", "2471816"))
+	API_HASH = os.environ.get("API_HASH", "7ac868a4f0251145881d5f1855d5e66e")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6158387506:AAFXW9JAXdlrhIaCcwl40u5RzbcsT1cHgpo")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "ThammuTv_Filestorebot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001190658285"))
+	BOT_OWNER = [int(owner) for owner in os.environ.get("BOT_OWNER", "1389078939").split()]
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://tnbots:tnbots@cluster0.lkuiies.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
-	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
+	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
